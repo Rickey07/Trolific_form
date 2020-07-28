@@ -11,7 +11,7 @@
             e.preventDefault();
             if(x < max_fields){ //max input box allowed
                 x++; //text box increment
-                $(wrapper).append('<div> <input type="text" name="price[' + x + ']"/>  <a href="#" class="remove_field">Remove</a> </div>' ); // add input boxes.
+                $(wrapper).append('<div> <input type="text" name="price[' + x + ']"/>  <input type="text" name="color['+ x +']"/>  <a href="#" class="remove_field">Remove</a> </div>' ); // add input boxes.
             } else {
                 $('.error-message').append('<div class="error"> Only 10 Choices Allowed </div>')
             }
@@ -30,9 +30,9 @@
 
         $(add_button1).click(function(e) {
             e.preventDefault();
-            if(z < max_fields1) {
-                z++;
-                $(wrapper1).append('<div> <input type="text" name="offer['+ y +']"/> <a href="#" class="remove_field">Remove </a> </div>')
+            if(y < max_fields1) {
+                y++;
+                $(wrapper1).append('<div> <input type="text" name="offer['+ y +']"/>  <input type="text" name="color['+ y +']"/>  <a href="#" class="remove_field">Remove </a> </div>')
             } else {
                 $('.error-message').append('<div class="error"> Only 10 Choices Allowed </div>')
             }
@@ -54,7 +54,7 @@
             e.preventDefault();
             if(z < max_fields2) {
                 z++;
-                $(wrapper2).append('<div> <input type="text" name="color['+ z +']"/> <a href="#" class="remove_field">Remove </a> </div>')
+                $(wrapper2).append('<div> <input type="text" name="color['+ z +']"/> <input type="text" name="color['+ z +']"/> <a href="#" class="remove_field">Remove </a>  </div>')
             } else {
                 $('.error-message').append('<div class="error"> Only 10 Choices Allowed </div>')
             }
@@ -75,7 +75,7 @@
             e.preventDefault();
             if(a < max_fields3) {
                 a++;
-                $(wrapper3).append('<div> <input type="text" name="color['+ a +']"/> <a href="#" class="remove_field">Remove </a> </div>')
+                $(wrapper3).append('<div> <input type="text" name="color['+ a +']"/>  <input type="text" name="color['+ a +']"/> <a href="#" class="remove_field">Remove </a> </div>')
             } else {
                 $('.error-message').append('<div class="error"> Only 10 Choices Allowed </div>')
             }
@@ -97,7 +97,7 @@
             e.preventDefault();
             if(b < max_fields4) {
                 b++;
-                $(wrapper4).append('<div> <input type="text" name="color['+ b +']"/> <a href="#" class="remove_field">Remove </a> </div>')
+                $(wrapper4).append('<div> <input type="text" name="color['+ b +']"/>  <input type="text" name="color['+ b +']"/> <a href="#" class="remove_field">Remove </a> </div>')
             } else {
                 $('.error-message').append('<div class="error"> Only 10 Choices Allowed </div>')
             }
