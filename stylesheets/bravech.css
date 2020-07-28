@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right , rgb(48, 84, 177) , rgb(34, 148, 133));
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container button {
+    padding: .7rem 1rem;
+    margin-left: 1rem;
+    outline: none;
+    text-align: center;
+    font-size: larger;
+    border-radius: .3rem;
+    color: white;
+    background: rgba(0,0, 0, 0.4);
+    border-color: transparent;
+}
+
+.container button:hover {
+    background: linear-gradient(to right , rgb(23, 141, 219) , rgb(34 , 148 , 133));
+}

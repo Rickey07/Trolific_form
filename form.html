@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Vechile Specifications</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="./stylesheets/form.css">
+    <script src="./scripts/dynamic.js" defer></script>
+</head>
+<body>
+    <div class="grid">
+        <div class="img-container">
+            <img src="https://source.unsplash.com/weekly?car" height="250px" alt="">
+        </div>
+        <div class="form-container">
+            <div class="error-message">
+
+            </div>
+            <form action="" class="form">
+                <div class="container-price">
+                <label for="price">Price-</label>
+                <input type="text" id="price" name="price[1]" class="price">
+                <button id="price-btn">+</button>
+                <div class="dynamic-price">
+
+                </div>
+                </div>
+                <div class="offers-container">
+                <label for="offers">Offers-</label>
+                <input type="text" id="offers" name="offer[1]">
+                <button id="offers-btn">+</button>
+                <div class="dynamic-offers">
+
+                </div>
+                <label for="desc">Desc</label>
+                <textarea name="desc" id="desc" cols="10" rows="10"></textarea>
+                 </div>
+                <div class="available-container">
+                <label>Availability of vehicle</label>
+                <input type="radio" id="yes" name="vehicle">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="vehicle">
+                <label for="no">No</label>
+                </div>
+                <div class="colors-container">
+                    <label for="colors">Colors Available</label>
+                    <input type="text" id="colors" name="colors[1]">
+                    <button id="colors-btn">+</button>
+                    <div class="dynamic-colors">
+
+                    </div>
+                </div>
+                <div class="delivery-container">
+                <label for="delivery">After Buying How many Days It will take for delivery</label>
+                <input type="text" id="delivery">
+                </div>
+                <div class="accessory-container">
+                    <label for="accessory">Accessory Price-</label>
+                    <input type="text" id="accessory" name="accessory[1]">
+                    <button id="accessory-btn">+</button>
+                    <div class="dynamic-accessory">
+
+                    </div>
+                </div>
+                <div class="extra-container">
+                    <label for="extraBen">Extra Benefits-</label>
+                    <input type="text" id="extraBen" name="extra[1]">
+                    <button id="extrabtn">+</button>
+                        <div class="dynamic-extra">
+
+                        </div>
+                    <label for="descExtra">Description</label>
+                    <textarea name="descExtra" id="descExtra" cols="10" rows="10"></textarea>
+                </div>
+                <button type="submit">SAVE</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
